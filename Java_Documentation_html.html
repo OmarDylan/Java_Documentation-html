@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header><h1>Java Documentation</h1></header>
+        <a href="#Introduction" class="nav-link">Introduction</a>
+        <a href="#What_you_should_already_know" class="nav-link">What you should already know</a>
+        <a href="#JavaScript_and_Java" class="nav-link">JavaScript and Java</a>
+        <a href="#Hello_world" class="nav-link">Hello world</a>
+        <a href="#Variables" class="nav-link">Variables</a>
+        <a href="#Declaring_variables" class="nav-link">Declaring variables</a>
+        <a href="#Variable_scope" class="nav-link">Variable scope</a>
+        <a href="#Data_Types" class="nav-link">Data Types</a>
+        <a href="#Control_Flow_Statements" class="nav-link">Control Flow Statements</a>
+        <a href="#Methods_(Functions)" class="nav-link">Methods (Functions)</a>
+        <a href="#Reference" class="nav-link">Reference</a>
+        
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            
+               <p>Java is a class-based, object-oriented programming language designed to be platform-independent. It follows the principle of "Write Once, Run Anywhere" (WORA), meaning compiled Java code can run on all platforms that support Java without recompilation. Java is a strongly typed language that provides automatic memory management through garbage collection.</p>
+<p>Java contains a comprehensive standard library of classes and interfaces, known as the Java API, which includes collections, input/output operations, networking capabilities, graphical user interface components, and much more.Core Java can be extended for various purposes:</p> 
+<ul>
+  <li>Java SE (Standard Edition) provides the core functionality for desktop and simple server applications</li>
+  <li>Java EE (Enterprise Edition) adds capabilities for large-scale, multi-tiered, scalable, reliable, and secure network applications</li>
+  <li>Java ME (Micro Edition) provides an API for mobile device programming</li>
+</ul>
+
+
+
+        </section>
+
+        <section class="main-section" id="What_you_should_already_know">
+            <header>What you should already know</header>
+           
+          <p>This guide assumes you have the following basic background:</p>
+  
+  <ul>
+    <li>Basic understanding of computer programming concepts</li>
+    <li>Familiarity with basic algorithmic thinking</li>
+    <li>Understanding of basic mathematical operations</li>
+    <li>Knowledge of operating systems and file systems</li>
+  </ul>
+
+
+        </section>
+
+        <section class="main-section" id="JavaScript_and_Java">
+            <header>JavaScript and Java</header>
+           
+           <p>Despite the similar names, Java and JavaScript are very different languages:</p>
+          <ul>
+            <li>Java is compiled to bytecode and runs on a Java Virtual Machine (JVM)</li>
+            <li>Java is strongly typed, requiring explicit declaration of variable types</li>
+            <li>Java is purely object-oriented; everything must be within a class</li>
+            <li>Java has static type checking at compile time</li>
+            <li>Java supports true multithreading</li>
+
+          </ul>
+
+
+        </section>
+
+        <section class="main-section" id="Hello_world">
+            <header>Hello world</header>
+           <p>Here's a simple "Hello World" program in Java:</p>
+<code>
+public class HelloWorld { <br/>
+      public static void main(String[] args) {
+
+        System.out.println("Hello, World!");<br/>
+  }<br/>     
+}</code>
+<p>Every Java program must have a class and a main method to run.</p>
+
+        </section>
+
+        <section class="main-section" id="Variables">
+            <header>Variables</header>
+           <p>In Java, all variables must be declared with a specific type before they can be used. Variable names (identifiers) must follow these rules:</p>
+  <ul>
+    <li>Must begin with a letter, dollar sign ($), or underscore (_)</li>
+    <li>Subsequent characters can be letters, digits, dollar signs, or underscores</li>
+    <li>Case sensitive</li>
+    <li>Cannot use Java keywords</li>
+  </ul>
+
+        </section>
+
+        <section class="main-section" id="Declaring_variables">
+            <header>Declaring variables</header>
+           <p>Variables in Java are declared with their type:</p>
+<code>
+int number = 42;<br/>
+String text = "Hello";<br/>
+double decimal = 3.14;<br/>
+boolean flag = true;
+</code>
+<p>Java supports three kinds of variable declarations:</p>
+<ul>
+  <li>Instance Variables (Non-Static Fields)</li>
+  <li>Class Variables (Static Fields)</li>
+  <li>Local Variables</li>
+</ul>
+
+
+        </section>
+
+        <section class="main-section" id="Variable_scope">
+            <header>Variable scope</header>
+            <p>Java has several levels of variable scope:</p>
+  <ul>
+    <li>Class level scope (fields)</li>
+    <li>Method level scope (local variables)</li>
+    <li>Block level scope (variables in loops or conditional statements)</li>
+    <li>Instance level scope (non-static fields)</li>
+  </ul>
+
+        </section>
+
+        <section class="main-section" id="Data_Types">
+            <header>Data Types</header>
+            <p>Java has two categories of data types:</p>
+  <ol>
+    <li>Primitive Data Types:
+      <ul>
+        <li>byte (8 bits)</li>
+        <li>short (16 bits)</li>
+        <li>int (32 bits)</li>
+        <li>long (64 bits)</li>
+        <li>float (32 bits)</li>
+        <li>double (64 bits)</li>
+        <li>boolean (true/false)</li>
+        <li>char (16 bits)</li>
+      </ul>
+    </li>
+    <li>Reference Types: 
+      <ul>
+        <li>Classes</li>
+	      <li>Interfaces</li>
+	      <li>Arrays</li>
+	      <li>Enums</li>
+      </ul>
+    </li>
+  </ol>
+ 
+
+	
+	
+
+        </section>
+
+        <section class="main-section" id="Control_Flow_Statements">
+            <header>Control Flow Statements</header>
+            
+            <h3>if...else statement</h3>
+<code>
+if (condition) { <br>
+    // code block executed if condition is true <br>
+} else if (anotherCondition) { <br>
+    // code block executed if anotherCondition is true <br>
+} else { <br>
+    // code block executed if all conditions are false <br>
+} </code>
+<h3>
+while statement
+</h3>
+
+<code> while (condition) { <br>
+    // code block to be executed while condition is true <br>
+} </code>
+<h3>for statement
+</h3>
+<code>for (initialization; condition; increment/decrement) { <br>
+    // code block to be executed <br>
+} </code>
+
+        </section>
+
+        <section class="main-section" id="Methods_(Functions)">
+            <header>Methods (Functions)</header>
+            <p>In Java, methods are always part of a class. A method declaration includes:</p>
+      <ul>
+        <li>Access modifier (public, private, protected)</li>
+        <li>Return type (or void)</li>
+        <li>Method name</li>
+        <li>Parameters (if any)</li>
+        <li>Method body</li>
+      </ul>
+<p>Example:</p>
+<code>
+public int multiply(int a, int b) { <br>
+    return a * b; <br>
+}
+</code>
+<p>Key characteristics of Java methods:</p>
+<ul>
+  <li>Must be declared within a class</li>
+  <li>Specify a return type (or void)</li>
+  <li>Can have access modifiers</li>
+  <li>Can throw exceptions</li>
+  <li>Can be overloaded (same name, different parameters)</li>
+</ul>
+        </section>
+
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <p>Some notable differences from other languages:</p>
+<ul>
+  <li>Java is statically typed</li>
+  <li>All code must be in classes</li>
+  <li>Memory management is automatic</li>
+  <li>Platform independence through bytecode</li>
+  <li>Rich standard library (Java API)</li>
+  <li>Strong support for multithreading</li>
+  <li>Built-in security features</li>
+</ul>
+	
+<p>This documentation provides a basic overview of Java programming. For more detailed information, refer to the official Java documentation and tutorials provided by Oracle.</p>
+
+        </section>
+    </main>
+</body>
+</html>
+
+
+
